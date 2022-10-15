@@ -52,7 +52,7 @@ jobs:
       - run: yarn lint
       # Push changes
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}

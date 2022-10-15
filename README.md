@@ -1,10 +1,13 @@
 # `web-template-vue`
 
-GitHub template for generating a web component.
+GitHub repo template for generating a web component repo with a Vue project.
 
 ## Getting Started
 
-Hit the [Use this template](https://github.com/mkdevops-se/web-template-vue/generate) button to create your own Vue 2.x repository.
+Hit the [Use this template](https://github.com/mkdevops-se/web-template-vue/generate) button
+to create your own Vue 2.x repository. After your repository is created, allow for a few minutes
+to pass while the _Template Cleanup_ GitHub Actions Workflow perform setup of the repo
+([link to example](https://github.com/mblomdahl/mats-web-project/actions/runs/3256048235/jobs/5346008221)).
 
 ## Developing the Template
 
