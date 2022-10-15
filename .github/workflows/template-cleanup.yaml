@@ -13,13 +13,15 @@ jobs:
   template-cleanup:
     name: Template Cleanup
     runs-on: ubuntu-latest
-    if: github.event.repository.name == 'web-template-vue'
+    if: github.event.repository.name != 'web-template-vue'
     steps:
       # Check out current repository
       - name: Fetch Sources
         uses: actions/checkout@v3
       # Setup Python
       - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
       - run: pip install cookiecutter
       # Template project
       - name: Template and commit project
@@ -48,20 +50,9 @@ jobs:
       - run: yarn install
       - run: yarn build
       - run: yarn lint
-#
-#      # Cleanup project
-#      - name: Cleanup
-#        run: ./gradlew templateCleanup
-#      # Commit modified files
-#      - name: Commit files
-#        run: |
-#          git config --local user.email "action@github.com"
-#          git config --local user.name "GitHub Action"
-#          git add .
-#          git commit -m "Template cleanup"
-#      # Push changes
-#      - name: Push changes
-#        uses: ad-m/github-push-action@v0.6.0
-#        with:
-#          branch: main
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # Push changes
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
