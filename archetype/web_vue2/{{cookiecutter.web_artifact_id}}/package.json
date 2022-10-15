@@ -1,5 +1,5 @@
 {
-  "name": "mblomdahl-web-template-vue",
+  "name": "{{cookiecutter.repo_name}}",
   "version": "0.1.0",
   "private": true,
   "scripts": {
