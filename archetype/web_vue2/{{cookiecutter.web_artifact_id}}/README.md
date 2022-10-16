@@ -1,6 +1,6 @@
 # `{{cookiecutter.repo_name}}`
 
-Web component generated from the [web-template-vue GitHub template](https://github.com/mkdevops-se/web-template-vue).
+Web component generated from the [`web-template-vue` GitHub template](https://github.com/mkdevops-se/web-template-vue).
 
 ## Project setup
 ```
