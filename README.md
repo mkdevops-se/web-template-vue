@@ -1,7 +1,7 @@
 # `web-template-vue`
 
 GitHub repo template for generating a web component repo with a Vue project, for a similar
-Next.js-React template, see sibling repo [`web-template-react`](https://github.com/mkdevops-se/web-template-react).
+Next.js-React template see sibling repo [`web-template-react`](https://github.com/mkdevops-se/web-template-react).
 
 ## Getting Started
 
